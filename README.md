@@ -13,7 +13,7 @@
  git push
 ```
 * 在gitlink代码仓库页面进行编辑，然后点击“提交变更”
-![](https://gitlink.org.cn/api/attachments/412396)
+![](https://gitlink.org.cn/api/attachments/412426)
 
 <br/>
 
