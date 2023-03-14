@@ -6,7 +6,7 @@
 <br/>
 
 2.进入复刻仓库编辑文档，可采用如下两种方式编辑：
-* 克隆复刻仓库到本地后，在**gitlink_help_center/docs**文件夹下新加markdown文档，依次执行
+* 克隆复刻仓库到本地后，在**gitlink_help_center/docs**文件夹下新加文件夹或markdown文档，依次执行
 ```bash
  git add <新增文件>
  git commit <新增文件> -m "提交信息"
