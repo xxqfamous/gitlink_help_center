@@ -3,11 +3,11 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
-  title: '前端周同学\'s Blog',
-  tagline: '📖 公众号: 前端周同学',
+  title: 'gitlink',
+  tagline: 'gitlink帮助中心',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/icon.ico',
   url: 'https://luffyzh.github.io',
   baseUrl: '/',
   organizationName: 'luffyZh', // Usually your GitHub org/user name.
@@ -18,32 +18,32 @@ module.exports = {
       indexName: 'docsearch',
     },
     navbar: {
-      title: '前端周同学',
+      title: '',
       logo: {
-        alt: 'website logo',
-        src: 'img/logo.svg',
+        alt: 'gitlink',
+        src: 'img/gitlink.png',
       },
       items: [
         {
           type: 'doc',
           docId: 'intro',
           position: 'left',
-          label: '文档',
+          label: '帮助中心',
         },
-        {
-          position: 'left',
-          to: '/blog',
-          label: '博客',
-        },
-        {
-          href: 'https://github.com/luffyZh/docusaurus-luffyzh-website',
-          label: 'GitHub',
-          position: 'right',
-        },
-        {
-          type: 'localeDropdown',
-          position: 'right',
-        },
+        // {
+        //   position: 'left',
+        //   to: '/blog',
+        //   label: '博客',
+        // },
+        // {
+        //   href: 'https://github.com/luffyZh/docusaurus-luffyzh-website',
+        //   label: 'GitHub',
+        //   position: 'right',
+        // },
+        // {
+        //   type: 'localeDropdown',
+        //   position: 'right',
+        // },
       ],
     },
     footer: {
