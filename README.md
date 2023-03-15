@@ -67,10 +67,10 @@
 * 链接
 
 	支持使用 url 路径或相对文件路径的常规 Markdown 链接
-	```
+	```bash
 	git操作 [git](/git).
 	```
-	```
+	```bash
 	git操作 [git](./git.md).
 	```
 
@@ -79,7 +79,7 @@
 * 图片
 
 	支持常规markdown图片，在**static/img/gitlink.png**中添加一个图像.png并在Markdown中显示它：
-	```
+	```bash
 	![gitlink logo](/img/gitlink.png)
 	```
 
