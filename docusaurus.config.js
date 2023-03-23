@@ -81,7 +81,7 @@ module.exports = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} 前端周同学～`,
+      copyright: `©Copyright 2023 CCF 开源发展委员会  Powered by Trustie& IntelliDE 京ICP备13000930号`,
     },
     prism: {
       theme: lightCodeTheme,
@@ -110,8 +110,8 @@ module.exports = {
       },
     ],
   ],
-  // i18n: {
-  //   defaultLocale: 'zh-cn',
-  //   locales: ['en', 'zh-cn'],
-  // },
+  i18n: {
+    defaultLocale: 'zh-cn',
+    locales: ['en', 'zh-cn'],
+  },
 };

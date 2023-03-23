@@ -25,7 +25,10 @@
 .navbar__link{
   color: #fff;
 }
-.menu{
+.table-of-contents__link--active{
+  color: #466aff;
+}
+html[data-theme=light] .menu{
   background-image:linear-gradient(180deg,#f3f5f8 0%,#ffffff 100%);
   box-shadow:8px 6px 18px rgba(171, 202, 255, 0.24) inset;
   margin-bottom: 0px!important;
