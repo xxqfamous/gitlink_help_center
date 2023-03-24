@@ -1,4 +1,5 @@
 ---
+sidebar_label: "GitLink平台简介"
 sidebar_position: 1
 ---
 
