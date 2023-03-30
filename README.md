@@ -84,8 +84,8 @@
 
 	```
 
-	## 	前端build成中文 
-	npm run build -- --locale zh-Hans
+	## 	前端build成中文 （i18n中可编辑对应中文内容）
+	npm run build -- --locale zh-CN
 	启动 npm run serve
 
 
