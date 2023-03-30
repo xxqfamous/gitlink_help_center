@@ -14,8 +14,8 @@ module.exports = {
   projectName: 'docusaurus-luffyzh-website', // Usually your repo name.
   themeConfig: {
     algolia: {
-      apiKey: '25626fae796133dc1e734c6bcaaeac3c',
-      indexName: 'docsearch',
+      apiKey: '0f9f28b9ab9efae89810921a351753b5',
+      indexName: 'github',
     },
     navbar: {
       title: '',
@@ -29,21 +29,7 @@ module.exports = {
           docId: 'intro',
           position: 'left',
           label: '帮助中心',
-        },
-        // {
-        //   position: 'left',
-        //   to: '/blog',
-        //   label: '博客',
-        // },
-        // {
-        //   href: 'https://github.com/luffyZh/docusaurus-luffyzh-website',
-        //   label: 'GitHub',
-        //   position: 'right',
-        // },
-        // {
-        //   type: 'localeDropdown',
-        //   position: 'right',
-        // },
+        }
       ],
     },
     footer: {
@@ -81,7 +67,7 @@ module.exports = {
           ],
         },
       ],
-      copyright: `©Copyright 2023 CCF 开源发展委员会  Powered by Trustie& IntelliDE 京ICP备13000930号`,
+      copyright: `<p>©Copyright 2023 CCF 开源发展委员会</p><p>Powered by Trustie& IntelliDE 京ICP备13000930号</p>`,
     },
     prism: {
       theme: lightCodeTheme,
@@ -90,20 +76,16 @@ module.exports = {
   },
   presets: [
     [
+       //此为docusaurus的默认界面风格
       '@docusaurus/preset-classic',
       {
+        //此为docs的侧边栏修饰
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
-          editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/',
+          //此为网页左下的Edit this page 链接地址
+          editUrl:'https://www.gitlink.org.cn/Gitlink/gitlink_help_center/tree/master/',
         },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/blog/',
-        },
+        //修饰的css文件格式
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
@@ -112,6 +94,6 @@ module.exports = {
   ],
   i18n: {
     defaultLocale: 'zh-cn',
-    locales: ['en', 'zh-cn'],
+    locales: ['zh-cn'],
   },
 };

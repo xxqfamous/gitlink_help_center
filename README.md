@@ -81,6 +81,12 @@
 	支持常规markdown图片，在**static/img/gitlink_logo.png**中添加一个图像.png并在Markdown中显示它：
 	```bash
 	![gitlink logo](/img/gitlink_logo.png)
+
 	```
+
+	## 	前端build成中文 
+	npm run build -- --locale zh-Hans
+	启动 npm run serve
+
 
 
