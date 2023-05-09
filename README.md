@@ -48,6 +48,7 @@
 	
 	This is my **first  document**!
 	```
+    在一级标题中：#与标题内容间需要入空格(# Hello)
 
 * 配置侧边栏
 
