@@ -1,0 +1,35 @@
+version: 2
+name: 合并请求通过后自动更新
+description: 合并请求通过后自动更新
+global:
+  concurrent: 1
+trigger:
+  webhook: gitlink@1.0.0
+  event:
+    - ref: pr
+      ruleset:
+        - param-ref: merged
+          operator: EQ
+          value: "true"
+      ruleset-operator: AND
+workflow:
+  - ref: start
+    name: 开始
+    task: start
+  - ref: ssh_cmd_0
+    name: ssh执行命令
+    task: ssh_cmd@1.1.1
+    input:
+      ssh_pass: ((hnxjy_test_83.password))
+      ssh_ip: '"111.8.36.180"'
+      ssh_port: '"120"'
+      ssh_user: '"root"'
+      ssh_cmd: '"cd /root/docusaurus/config/dir/awesometic-docs && git pull"'
+    needs:
+      - start
+  - ref: end
+    name: 结束
+    task: end
+    needs:
+      - ssh_cmd_0
+
