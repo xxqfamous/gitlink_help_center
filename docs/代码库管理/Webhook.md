@@ -20,7 +20,7 @@ sidebar_position: 8
   4. 删除Webhook
   添加Webhook后，如下图所示，可以通过点击右侧”删除“按键来对每个Webhook进行删除操作。
   
-  ![](../../static/img/代码库管理/Webhook/删除Webhook.png)<br/>
+  ![](../../static/img/代码库管理/Webhook/删除webhook.png)<br/>
 
   5. Webhook支持的事件类型
   在GitLink中，Webhook支持的事件类型如下：
