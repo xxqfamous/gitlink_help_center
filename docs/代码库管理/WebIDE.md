@@ -38,3 +38,4 @@ sidebar_position: 9
 9. 代码在线运行
 ● 集成了基于 skypack 的更加轻量的 CodeSwing 插件，可以在极速版去运行前端代码。
 ● 集成了基于  Pyodide 的 Code-Runner-For-Web 插件，可以将 Python 的运行搬到浏览器上。
+![](../../static/img/代码库管理/WebIDE/WebIDE代码在线运行.png)<br/>
