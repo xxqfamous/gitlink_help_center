@@ -19,19 +19,16 @@ GitLink（确实开源）是CCF官方指定的开源创新服务平台，旨在�
 # 帮助文档
 帮助文档有助于您全面了解GitLink平台，让我们一起为开源创新贡献力量！
 
-<nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages">
-<a class="pagination-nav__link">
-:::tip 快速开始
 
-[5个文档](../快速开始/注册GitLink账号)
-
-:::
-</a>
-<a class="pagination-nav__link">
-:::tip 代码库管理
-
-[8个文档](../代码库管理/仓库创建)
-
-:::
-</a>
-</nav>
+<section class="row list">
+  <article class="col col--6 margin-bottom--lg">
+    <a class="card padding--lg cardContainer" href="docs/快速开始/注册GitLink账号">
+      <h2 class="text--truncate cardTitle" title="快速开始">快速开始</h2>
+		<p>帮助用户快速注册使用平台[5个文档]</p>
+	</a></article>
+ <article class="col col--6 margin-bottom--lg">
+   <a class="card padding--lg cardContainer" href="docs/代码库管理/仓库创建">
+     <h2 class="text--truncate cardTitle" title="代码库管理">代码库管理</h2>
+		<p>代码库使用及设置[8个文档]</p>
+	</a></article>
+</section>
