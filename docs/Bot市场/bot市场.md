@@ -15,10 +15,10 @@ Bot市场主页中展示了目前所有已经上架市场的bot简要信息，�
 
 用户可结合种类筛选和关键字搜索缩小范围，在市场中快速找到符合项目相关需求的bot。
 
-![botmarket1](/img/bot/botmarket1.png)
+![botmarket1](../../static/img/bot/botmarket1.png)
 
 在bot市场页中，用户点击指定的bot卡片即可进入该bot的详情页。Bot的详情页包含bot的头像，名称，开发者，种类和详细介绍等信息，用户可在此掌握该bot的各项介绍，进一步判断是否将其安装到指定仓库中。
 
-![botmarket2](/img/bot/botmarket2.png)
+![botmarket2](../../static/img/bot/botmarket2.png)
 
 在bot详情页中，若用户认为该bot满足自己的项目需求，可点击“安装此Bot”按钮，了解该bot的权限信息，将其安装到指定的仓库中，关于安装的更多介绍可见“Bot安装”部分。
