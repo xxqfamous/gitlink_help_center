@@ -16,6 +16,8 @@ module.exports = {
     algolia: {
       apiKey: '0f9f28b9ab9efae89810921a351753b5',
       indexName: 'github',
+      contextualSearch: true,
+      facetFilters: ['language:zh-CH'],
     },
     navbar: {
       title: '',
