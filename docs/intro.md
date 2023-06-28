@@ -53,7 +53,7 @@ GitLink（确实开源）是CCF官方指定的开源创新服务平台，旨在�
 		<p>DevOps引擎(Engine)使用及设置[6个文档]</p>
 	</a></article>
      <article class="col col--6 margin-bottom--lg">
-             <a class="card padding--lg cardContainer" href="/docs/维基/维基也面管理">
+             <a class="card padding--lg cardContainer" href="/docs/维基/模板导入及导出">
      <h2 class="text--truncate cardTitle" title="维基">维基</h2>
 		<p>维基(Wiki)使用及设置[2个文档]</p>
 	</a></article>
@@ -63,7 +63,7 @@ GitLink（确实开源）是CCF官方指定的开源创新服务平台，旨在�
 		<p>Bot市场使用及设置[4个文档]</p>
 	</a></article>
      <article class="col col--6 margin-bottom--lg">
-    <a class="card padding--lg cardContainer" href="/docs/第三方服务/服务简介">
+    <a class="card padding--lg cardContainer" href="/docs/第三方服务/跨平台代码同步">
      <h2 class="text--truncate cardTitle" title="第三方服务">第三方服务</h2>
 		<p>第三方服务使用及设置[3个文档]</p>
 	</a></article>
