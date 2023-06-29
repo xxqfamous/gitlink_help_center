@@ -36,7 +36,7 @@ module.exports = {
     footer: {
       style: 'dark',
       logo:{
-        src:"/static/img/gitlink.png"
+        src:"static/img/gitlink.png"
       },
       links: [
         {
@@ -88,6 +88,20 @@ module.exports = {
               label: '官网邮箱：gitlink@ccf.org.cn',
               to:"https://www.gitlink.org.cn"
             },
+            {
+              label:'QQ群',
+              logo:{
+                src:"/static/img/gitlink-qq.png",
+              },
+              to:'https://www.gitlink.org.cn'
+            },
+            {
+              label:'公众号',
+              logo:{
+                src:"/static/img/gongzhong.png",
+              },
+              to:'https://www.gitlink.org.cn'
+            }
           ],
         },
       ],
