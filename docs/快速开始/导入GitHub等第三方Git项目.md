@@ -19,7 +19,11 @@ sidebar_position: 5
 
 ## 3. 授权验证
 
-在使用GitLink平台导入其他平台（如GitHub、Gitee）的开源项目时，如果项目为私有，则无法通过正常途径导入，需要输入对应平台有权限的token值进行校验。下面将列举一些典型开源平台的token获取方式。
+在使用GitLink平台导入其他平台（如GitHub、Gitee）的开源项目时，如果项目为私有，则无法通过正常途径导入，需要输入对应平台有权限的token值进行校验。
+
+![](/img/quickstart/import_verify.png)
+
+下面将列举一些典型开源平台的token获取方式。
 
 ### GitHub token获取方式
 
