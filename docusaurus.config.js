@@ -13,11 +13,6 @@ module.exports = {
   organizationName: 'luffyZh', // Usually your GitHub org/user name.
   projectName: 'docusaurus-luffyzh-website', // Usually your repo name.
   themeConfig: {
-    aloglia:{
-      contextualSearch:true,
-      apiKey: '0f9f28b9ab9efae89810921a351753b5',
-      search:true,
-    },
     navbar: {
       title: '',
       logo: {
@@ -36,7 +31,7 @@ module.exports = {
     footer: {
       style: 'dark',
       logo:{
-        src:"static/img/gitlink.png"
+        src:"img/gitlink.png"
       },
       links: [
         {
@@ -44,19 +39,19 @@ module.exports = {
           items: [
             {
               label: '网站首页',
-              to: '/docs/intro',
+              to: 'https://www.gitlink.org.cn',
             },
             {
               label: '关于我们',
-              to: '/docs/intro',
+              to: 'https://www.gitlink.org.cn/aboutus',
             },
             {
               label: '教学实践',
-              to: '/docs/intro',
+              to: 'https://www.gitlink.org.cn/educoder',
             },
             {
               label: '合作伙伴',
-              to: '/docs/intro',
+              to: 'https://forum.trustie.net/forums/5030/detail',
             },
           ],
         },
@@ -65,19 +60,19 @@ module.exports = {
           items: [
             {
               label: 'API文档',
-              to: '/blog',
+              to: 'https://forgeplus.trustie.net/docs/api',
             },
             {
               label: 'Git常用命令',
-              to: '/blog',
+              to: 'https://git-scm.com',
             },
             {
               label: '引擎使用手册',
-              to: '/blog',
+              to: 'https://forum.gitlink.org.cn/forums/7487/detail',
             },
             {
               label: '服务协议',
-              to: '/blog',
+              to: 'https://forum.trustie.net/forums/5029/detail',
             },
           ],
         },
@@ -90,16 +85,10 @@ module.exports = {
             },
             {
               label:'QQ群',
-              logo:{
-                src:"/static/img/gitlink-qq.png",
-              },
               to:'https://www.gitlink.org.cn'
             },
             {
               label:'公众号',
-              logo:{
-                src:"/static/img/gongzhong.png",
-              },
               to:'https://www.gitlink.org.cn'
             }
           ],
@@ -122,6 +111,7 @@ module.exports = {
           sidebarPath: require.resolve('./sidebars.js'),
           //此为网页左下的Edit this page 链接地址
           editUrl:'https://www.gitlink.org.cn/Gitlink/gitlink_help_center/tree/master/',
+          routeBasePath: "/",
         },
         //修饰的css文件格式
         theme: {
@@ -131,11 +121,12 @@ module.exports = {
     ],
   ],
   plugins: [
-    [require.resolve("@cmfcmf/docusaurus-search-local"),{
-      indexDocs: true,
-      indexBlog: true,
-      language: ['zh'],
-    }],
+    [require.resolve('@cmfcmf/docusaurus-search-local'), { // warning: Use '@cmfcmf/docusaurus-search-local' (without the require.resolve) if you use Docusaurus before v2.0.0-alpha.56
+      indexBlog: true, // whether to index blog pages
+      indexDocs: true, // whether to index docs pages
+      indexPages: false, // whether to index static pages
+      language: "en" // language of your documentation, see next section
+    }]
   ],
   i18n: {
     defaultLocale: 'zh-cn',
