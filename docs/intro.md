@@ -1,7 +1,8 @@
 ---
-slug: /
 sidebar_label: "介绍"
+label: "介绍"
 sidebar_position: 1
+slug: /
 ---
 
 # 关于GitLink

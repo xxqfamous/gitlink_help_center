@@ -13,11 +13,21 @@ module.exports = {
   organizationName: 'luffyZh', // Usually your GitHub org/user name.
   projectName: 'docusaurus-luffyzh-website', // Usually your repo name.
   themeConfig: {
+    colorMode: {
+      defaultMode: 'light',
+      disableSwitch: false,
+      respectPrefersColorScheme: true,
+    },
+    aloglia:{
+      apiKey: '0f9f28b9ab9efae89810921a351753b5',
+      indexName: 'github',
+    },
     navbar: {
+      style:"dark",
       title: '',
       logo: {
         alt: 'gitlink',
-        src: 'img/gitlink.png',
+        src: 'img/gitlink.png'
       },
       items: [
         {
@@ -121,12 +131,7 @@ module.exports = {
     ],
   ],
   plugins: [
-    [require.resolve('@cmfcmf/docusaurus-search-local'), { // warning: Use '@cmfcmf/docusaurus-search-local' (without the require.resolve) if you use Docusaurus before v2.0.0-alpha.56
-      indexBlog: true, // whether to index blog pages
-      indexDocs: true, // whether to index docs pages
-      indexPages: false, // whether to index static pages
-      language: "en" // language of your documentation, see next section
-    }]
+    ['@cmfcmf/docusaurus-search-local', {}]
   ],
   i18n: {
     defaultLocale: 'zh-cn',
