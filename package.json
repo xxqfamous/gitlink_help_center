@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "docusaurus": "docusaurus",
-    "dev": "docusaurus start --port 3000",
+    "dev": "docusaurus start --port 2699",
     "build": "docusaurus build",
     "swizzle": "docusaurus swizzle",
     "deploy": "docusaurus deploy",
@@ -18,8 +18,6 @@
     "@docusaurus/core": "2.4.1",
     "@docusaurus/plugin-client-redirects": "2.4.1",
     "@docusaurus/preset-classic": "2.4.1",
-    "@docusaurus/theme-classic": "^2.4.1",
-    "@docusaurus/theme-search-algolia": "^2.4.1",
     "@mdx-js/react": "1.6.22",
     "clsx": "1.2.1",
     "docusaurus-gtm-plugin": "0.0.2",

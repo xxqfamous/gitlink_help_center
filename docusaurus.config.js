@@ -1,129 +1,220 @@
-const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+const copyright = '2021-present © BoxyHQ Inc.';
 
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
-  title: 'gitlink',
-  tagline: 'gitlink帮助中心',
-  onBrokenLinks: 'ignore',
-  onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/icon.ico',
-  url: 'https://luffyzh.github.io',
+  title: 'Security Building Blocks for Developers',
+  tagline:
+    'BoxyHQ helps startups enable enterprise features in any SaaS app with just a few lines of code. Integrate SAML, Audit Logs, Privacy Vault and Role Based Access in minutes. Open source and free.',
+  url: 'https://boxyhq.com',
   baseUrl: '/',
-  organizationName: 'luffyZh', // Usually your GitHub org/user name.
-  projectName: 'docusaurus-luffyzh-website', // Usually your repo name.
+  onBrokenLinks: 'throw',
+  onBrokenMarkdownLinks: 'throw',
+  favicon: 'img/favicon.ico',
+  organizationName: 'boxyhq', // Usually your GitHub org/user name.
+  projectName: 'website', // Usually your repo name.
+  scripts: [],
+  // stylesheets: ['styles/dark-mode.css'],
   themeConfig: {
+    prism: {
+      theme: require('prism-react-renderer/themes/dracula'),
+      additionalLanguages: ['php'],
+    },
+    zoom: {
+      selector: '.markdown :not(em) > img',
+      config: {
+        background: {
+          light: 'rgb(255, 255, 255)',
+          dark: 'rgb(50, 50, 50)',
+        },
+      },
+    },
+    announcementBar: {
+      id: 'announcement-bar',
+      content:
+        '<a target="_blank" rel="nofollow noopener noreferrer" href="https://github.com/boxyhq/jackson">⭐ Star Enterprise SSO on GitHub</a>     <a target="_blank" rel="nofollow noopener noreferrer" href="https://github.com/retracedhq/retraced">⭐ Star Audit Logs on GitHub</a>',
+      isCloseable: false,
+    },
+    image: 'img/website-preview-image.png',
     colorMode: {
       defaultMode: 'light',
       disableSwitch: false,
       respectPrefersColorScheme: true,
     },
-    aloglia:{
-      apiKey: '0f9f28b9ab9efae89810921a351753b5',
-      indexName: 'github',
-    },
     navbar: {
-      style:"dark",
-      title: '',
+      title: 'BoxyHQ',
       logo: {
-        alt: 'gitlink',
-        src: 'img/gitlink.png'
+        alt: 'BoxyHQ',
+        width: '32px',
+        height: '32px',
+        src: 'img/logo.png',
+        srcDark: 'img/logo-dark.png',
       },
       items: [
         {
-          type: 'doc',
-          docId: 'intro',
-          position: 'left',
-          label: '帮助中心',
-        }
-      ]
+          label: 'Products',
+          type: 'dropdown',
+          items: [
+            {
+              to: '/enterprise-sso',
+              label: 'Enterprise SSO',
+            },
+            {
+              to: '/directory-sync',
+              label: 'Directory Sync',
+            },
+            {
+              to: '/audit-logs',
+              label: 'Audit Logs',
+            },
+            {
+              to: '/privacy-vault',
+              label: 'Privacy Vault',
+            },
+            { to: '/saas-registration', label: 'SaaS Early Access' },
+          ],
+        },
+        {
+          label: 'Developers',
+          type: 'dropdown',
+          items: [
+            { to: '/docs', label: 'Docs' },
+            { to: '/guides', label: 'Guides' },
+            { to: '/enterprise-readiness', label: 'Enterprise Readiness' },
+            {
+              href: 'https://mocksaml.com',
+              label: 'Mock SAML',
+            },
+            {
+              href: 'https://github.com/boxyhq/saas-starter-kit',
+              label: 'Enterprise SaaS Starter Kit',
+            },
+            {
+              href: 'https://awesome-oss-devsec.boxyhq.com',
+              label: 'Developer Security Tools',
+            },
+          ],
+        },
+        { to: '/blog', label: 'Blog' },
+        { to: '/pricing', label: 'Pricing' },
+        {
+          label: 'Company',
+          type: 'dropdown',
+          position: 'right',
+          items: [
+            {
+              to: '/careers',
+              label: 'Careers',
+            },
+            {
+              to: '/team',
+              label: 'Team',
+            },
+            {
+              to: '/pledge',
+              label: 'Pledge',
+            },
+          ],
+        },
+        {
+          href: 'https://github.com/boxyhq',
+          position: 'right',
+          className: 'header-github-link',
+        },
+      ],
     },
     footer: {
       style: 'dark',
-      logo:{
-        src:"img/gitlink.png"
-      },
       links: [
         {
-          title: '社区',
+          title: 'Community',
           items: [
             {
-              label: '网站首页',
-              to: 'https://www.gitlink.org.cn',
+              label: 'GitHub',
+              href: 'https://github.com/boxyhq',
             },
             {
-              label: '关于我们',
-              to: 'https://www.gitlink.org.cn/aboutus',
+              label: 'Discord',
+              href: 'https://discord.boxyhq.com',
             },
             {
-              label: '教学实践',
-              to: 'https://www.gitlink.org.cn/educoder',
+              label: 'Twitter',
+              href: 'https://twitter.com/boxyhq',
             },
             {
-              label: '合作伙伴',
-              to: 'https://forum.trustie.net/forums/5030/detail',
+              label: 'OSS Friends',
+              href: 'https://boxyhq.com/oss-friends',
             },
           ],
         },
         {
-          title: '支持与服务',
+          title: 'Social',
           items: [
             {
-              label: 'API文档',
-              to: 'https://forgeplus.trustie.net/docs/api',
+              label: 'LinkedIn',
+              href: 'https://www.linkedin.com/company/boxyhq',
             },
             {
-              label: 'Git常用命令',
-              to: 'https://git-scm.com',
+              label: 'Facebook',
+              href: 'https://www.facebook.com/boxyhq',
             },
             {
-              label: '引擎使用手册',
-              to: 'https://forum.gitlink.org.cn/forums/7487/detail',
-            },
-            {
-              label: '服务协议',
-              to: 'https://forum.trustie.net/forums/5029/detail',
+              label: 'Instagram',
+              href: 'https://www.instagram.com/boxyhq',
             },
           ],
         },
         {
-          title: '加入我们',
+          title: 'Legal',
           items: [
             {
-              label: '官网邮箱：gitlink@ccf.org.cn',
-              to:"https://www.gitlink.org.cn"
+              label: 'Privacy & Cookies Policy',
+              href: '/privacy.html',
             },
             {
-              label:'QQ群',
-              to:'https://www.gitlink.org.cn'
+              label: 'Terms',
+              href: '/terms.html',
+              target: '_blank',
+            },
+          ],
+        },
+        {
+          title: 'Company',
+          items: [
+            {
+              label: 'Careers',
+              href: '/careers',
             },
             {
-              label:'公众号',
-              to:'https://www.gitlink.org.cn'
-            }
+              label: 'Team',
+              href: '/team',
+            },
           ],
         },
       ],
-      copyright: `<p>©Copyright ${new Date().getFullYear()} CCF 开源发展委员会</p><p>Powered by Trustie& IntelliDE 京ICP备13000930号</p>`,
-    },
-    prism: {
-      theme: lightCodeTheme,
-      darkTheme: darkCodeTheme,
+      copyright,
     },
   },
   presets: [
     [
-       //此为docusaurus的默认界面风格
       '@docusaurus/preset-classic',
       {
-        //此为docs的侧边栏修饰
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          //此为网页左下的Edit this page 链接地址
-          editUrl:'https://www.gitlink.org.cn/Gitlink/gitlink_help_center/tree/master/',
-          routeBasePath: "/",
         },
-        //修饰的css文件格式
+        blog: {
+          blogTitle: 'Blog',
+          blogDescription:
+            'The BoxyHQ blog is where our team shares our thoughts and ideas about everything from our products to industry news and insights. We also welcome guest posts so please do get in touch if you have any thoughts you would like to share on our blog.',
+          showReadingTime: true,
+          feedOptions: {
+            type: 'all',
+            copyright,
+          },
+
+          blogSidebarTitle: 'Recent posts',
+          blogSidebarCount: 5,
+          postsPerPage: 'ALL',
+        },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
@@ -131,10 +222,70 @@ module.exports = {
     ],
   ],
   plugins: [
-    ['@cmfcmf/docusaurus-search-local', {}]
+    [
+      require.resolve('docusaurus-gtm-plugin'),
+      {
+        id: 'GTM-N9999D3', // GTM Container ID
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-blog',
+      {
+        /**
+         * Required for any multi-instance plugin
+         */
+        id: 'careers',
+        /**
+         * URL route for the blog section of your site.
+         * *DO NOT* include a trailing slash.
+         */
+        routeBasePath: 'careers',
+        /**
+         * Path to data on filesystem relative to site dir.
+         */
+        path: './careers',
+        blogTitle: 'Careers',
+        blogDescription:
+          'Join us on our mission to help startups simplify the development of compliance and data security-related features in their products. Check out our open roles.',
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'guides',
+        path: 'guides',
+        routeBasePath: 'guides',
+        sidebarPath: require.resolve('./sidebars_guides.js'),
+      },
+    ],
+    ['@cmfcmf/docusaurus-search-local', {}],
+    require.resolve('docusaurus-plugin-image-zoom'),
+    [
+      '@docusaurus/plugin-client-redirects',
+      {
+        redirects: [
+          {
+            from: '/docs/jackson/admin-ui',
+            to: '/docs/admin-portal/enterprise-sso',
+          },
+          {
+            from: '/docs/directory-sync/admin-ui',
+            to: '/docs/admin-portal/directory-sync',
+          },
+          {
+            from: '/docs/jackson/saml-flow',
+            to: '/docs/jackson/sso-flow',
+          },
+          {
+            from: '/docs/jackson/configure-saml-idp',
+            to: '/docs/jackson/sso-providers',
+          },
+          {
+            from: '/docs/jackson/deploy/pre-loaded-configuration',
+            to: '/docs/jackson/deploy/pre-loaded-connections',
+          },
+        ],
+      },
+    ],
   ],
-  i18n: {
-    defaultLocale: 'zh-cn',
-    locales: ['zh-cn'],
-  },
 };

@@ -1609,7 +1609,7 @@
     "@types/react" "*"
     prop-types "^15.6.2"
 
-"@docusaurus/theme-classic@2.4.1", "@docusaurus/theme-classic@^2.4.1":
+"@docusaurus/theme-classic@2.4.1":
   version "2.4.1"
   resolved "https://registry.npmmirror.com/@docusaurus/theme-classic/-/theme-classic-2.4.1.tgz"
   integrity sha512-Rz0wKUa+LTW1PLXmwnf8mn85EBzaGSt6qamqtmnh9Hflkc+EqiYMhtUJeLdV+wsgYq4aG0ANc+bpUDpsUhdnwg==
@@ -1662,7 +1662,7 @@
     use-sync-external-store "^1.2.0"
     utility-types "^3.10.0"
 
-"@docusaurus/theme-search-algolia@2.4.1", "@docusaurus/theme-search-algolia@^2.4.1":
+"@docusaurus/theme-search-algolia@2.4.1":
   version "2.4.1"
   resolved "https://registry.npmmirror.com/@docusaurus/theme-search-algolia/-/theme-search-algolia-2.4.1.tgz"
   integrity sha512-6BcqW2lnLhZCXuMAvPRezFs1DpmEKzXFKlYjruuas+Xy3AQeFzDJKTJFIm49N77WFCTyxff8d3E4Q9pi/+5McQ==

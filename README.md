@@ -1,93 +1,45 @@
-# 确实开源帮助中心
+# Website
 
-## 贡献文档方式
-#### 1.复刻主仓库
-![](https://gitlink.org.cn/api/attachments/412462)
-<br/>
+This website is built using [Docusaurus 2](https://docusaurus.io/), a modern static website generator.
 
-#### 2.进入复刻仓库编辑文档
-![](https://gitlink.org.cn/api/attachments/412465)
+## Installation
 
-<br/>
-
-可采用如下两种方式编辑：
-* 克隆复刻仓库到本地后，在**gitlink_help_center/docs**文件夹下新建文件夹或markdown文档，依次执行
-```bash
- git add <新增文件>
- git commit <新增文件> -m "提交信息"
- git push
+```console
+npm install
 ```
-* 在gitlink代码仓库页面进行编辑，然后点击“提交变更”
-![](https://gitlink.org.cn/api/attachments/412426)
 
-<br/>
+## Local Development
 
-#### 3.向主仓提交合并请求
-![](https://gitlink.org.cn/api/attachments/412466)
+```console
+npm run dev
+```
 
-<br/>
+This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
 
-## 页面目录——仓库目录示意图
+## Build
 
-<br/>
+```console
+npm run build
+```
 
-1.如下图左边为帮助中心侧边栏一级目录展示效果，右边为代码仓库文件夹目录：
-![](https://gitlink.org.cn/api/attachments/412473)
+This command generates static content into the `build` directory and can be served using any static contents hosting service.
 
-<br/>
+## Deployment
 
-2.如下图左边为帮助中心侧边栏点击一级目录“Test1”后展开效果，右边为点击代码仓库文件夹“test1”后md文件目录：
-![](https://gitlink.org.cn/api/attachments/412474)
+This website is deployed on render.com
 
-## 创建markdown文档
-* 创建第一篇文档
-在**docs/test1**目录下创建hello.md
+## Contributing
 
-	```bash
-	# Hello
-	
-	This is my **first  document**!
-	```
-    在一级标题中：#与标题内容间需要入空格(# Hello)
+Thanks for taking the time to contribute! Contributions are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make will benefit everybody and are appreciated.
 
-* 配置侧边栏
+Please try to create bug reports that are:
 
-	```bash
-	---
-	sidebar_label: 'Hi!'      <!--定义侧边栏标签名称-->
-	sidebar_position: 3     <!--定义侧边栏层级位置-->
-	---
-	
-	# Hello
-	
-	This is my **first document**!
-	```
+- _Reproducible._ Include steps to reproduce the problem.
+- _Specific._ Include as much detail as possible: which version, what environment, etc.
+- _Unique._ Do not duplicate existing opened issues.
+- _Scoped to a Single Bug._ One bug per report.
 
-<br/>
+## Community
 
-* 链接
-
-	支持使用 url 路径或相对文件路径的常规 Markdown 链接
-	```bash
-	git操作 [git](/git).
-	```
-	```
-	git操作 [git](./git.md).
-	```
-
-<br/>
-
-* 图片
-
-	支持常规markdown图片，在**static/img/gitlink_logo.png**中添加一个图像.png并在Markdown中显示它：
-	```bash
-	![gitlink logo](/img/gitlink_logo.png)
-
-	```
-
-	## 	前端build成中文 （i18n中可编辑对应中文内容）
-	npm run build -- --locale zh-CN
-	启动 npm run serve
-
-
-
+- [Discord](https://discord.gg/uyb7pYt4Pa) (For live discussion with the Community and BoxyHQ team)
+- [Twitter](https://twitter.com/BoxyHQ) (Get the news fast)
