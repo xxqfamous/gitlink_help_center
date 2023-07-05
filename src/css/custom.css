@@ -7,7 +7,7 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #25c2a0;
+  --ifm-color-primary: #466aff;
   --ifm-color-primary-dark: rgb(33, 175, 144);
   --ifm-color-primary-darker: rgb(31, 165, 136);
   --ifm-color-primary-darkest: rgb(26, 136, 112);
@@ -15,194 +15,129 @@
   --ifm-color-primary-lighter: rgb(102, 212, 189);
   --ifm-color-primary-lightest: rgb(146, 224, 208);
   --ifm-code-font-size: 95%;
-  --ifm-navbar-height: 5rem;
-
-  --aa-input-border-color-rgb: 190, 195, 201 !important;
-  --aa-selected-color-rgb: 141, 148, 158 !important;
-  --aa-muted-color-rgb: 37, 194, 160 !important;
-  --aa-primary-color-rgb: 37, 194, 160 !important;
 }
-
-body[data-theme='dark'] {
-  --aa-input-border-color-rgb: 190, 195, 201 !important;
-  --aa-background-color-rgb: 27, 27, 29 !important;
-  --aa-selected-color-rgb: 190, 195, 201 !important;
-  --aa-muted-color-rgb: 37, 194, 160 !important;
-  --aa-primary-color-rgb: 37, 194, 160 !important;
+.navbar{
+  background-color: rgba(27, 36, 64, 1);
 }
-
+.navbar__link--active,a:hover,.menu__link--active{
+  color: rgba(70, 106, 255, 1)!important;
+}
+.navbar__link{
+  color: #fff;
+}
+.table-of-contents__link--active{
+  color: #466aff;
+}
+html[data-theme=light] .menu{
+  background-image:linear-gradient(180deg,#f3f5f8 0%,#ffffff 100%);
+  box-shadow:8px 6px 18px rgba(171, 202, 255, 0.24) inset;
+  margin-bottom: 0px!important;
+}
 .docusaurus-highlight-code-line {
-  background-color: rgb(72, 77, 91);
+  background-color: rgba(0, 0, 0, 0.1);
   display: block;
   margin: 0 calc(-1 * var(--ifm-pre-padding));
   padding: 0 var(--ifm-pre-padding);
 }
 
-.navbar__brand {
-  height: 3.5rem;
+html[data-theme='dark'] .docusaurus-highlight-code-line {
+  background-color: rgba(0, 0, 0, 0.3);
 }
-
-/* GitHub */
-.header-github-link:hover {
-  opacity: 0.6;
+.footer{
+  height: 473px;
+  position: relative;
+  background: #1e1e1e;
 }
-
-.header-github-link:before {
-  content: '';
-  width: 24px;
-  height: 24px;
+.container{
+  height: 100%;
   display: flex;
-  background: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12'/%3E%3C/svg%3E")
-    no-repeat;
+  flex-direction: column;
+  justify-content: space-around;
 }
-
-html[data-theme='dark'] .header-github-link:before {
-  background: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='white' d='M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12'/%3E%3C/svg%3E")
-    no-repeat;
-}
-
-.card {
-  border: 1px solid #333;
-  box-shadow: none;
-  border-radius: 5px;
-  text-decoration: none !important;
-  color: var(--ifm-color-content);
-}
-
-.markdown h1:first-child {
-  --ifm-h1-font-size: 2.3rem;
-}
-
-/* v2 CSS */
-
-.intro__buttons {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
-
-.page__section {
-  border-top: 1px solid var(--ifm-color-emphasis-200);
-  width: 100%;
-  padding: 40px 10px 40px;
-}
-
-.red {
-  border: 1px solid red;
-}
-
-.section__header {
-  font-size: 30px;
-  margin: 0%;
-}
-
-.card__description {
-  font-size: 14px;
-}
-
-.card {
-  border: 1px solid #e3dbdb !important;
-}
-
-.hero__title {
-  font-size: 2.25rem;
-  margin: 0%;
-}
-
-.hero__subtitle {
-  font-size: 1.25rem;
-}
-
-.hero__image {
-  display: none;
-  justify-content: center;
-}
-
-.product__dropdown__link {
-  display: flex;
-  align-items: center;
-  column-gap: 5px;
-}
-
-.center {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.cursor {
-  cursor: pointer;
-}
-
-/* Pricing page */
-
-.pricing__table {
-  width: 100%;
-  display: inline-table !important;
-  table-layout: fixed;
-  margin-top: 20px;
-  border: 1px solid #f1f3f5;
-}
-
-.pricing__table td,
-.pricing__table th {
-  padding: 10px;
-  text-align: center;
-  border: 1px solid #f1f3f5;
-  border-left: 0px;
-  border-right: 0px;
-}
-
-.pricing__table tr,
-.pricing__table tr:nth-child(2n) {
-  background: none;
-}
-
-.pricing__section__desktop {
-  display: none;
-}
-
-.pricing__table .highlight {
-  background: rgb(37 194 160 / 31%);
-}
-
-.modal__close__btn {
+.footer__bottom .margin-bottom--sm{
   position: absolute;
-  top: 10px;
-  right: 10px;
-  border: none;
-  background: transparent;
-  font-size: 25px;
-  cursor: pointer;
+  margin-top: -150px;
+  top:50%
 }
-
-/* Override "react-model" container width */
-.ReactModal__Content {
-  width: 80%;
+.footer__links .footer__title{
+  height: 25px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+  line-height: 25px;
+  margin-bottom: 20px;
 }
-
-/* Mobile view */
-
-@media screen and (min-width: 996px) {
-  .row.is-multiline .col {
-    margin-top: var(--ifm-spacing-horizontal) !important;
-    margin-bottom: var(--ifm-spacing-horizontal) !important;
-  }
-
-  .hero__image {
-    display: flex;
-  }
-
-  .pricing__section__desktop {
-    display: block;
-  }
-
-  .pricing__section__mobile {
-    display: none;
-  }
-
-  .ReactModal__Content {
-    width: 500px;
-    height: 550px;
-  }
+.footer__links .footer__col:last-child .footer__items:last-child{
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer__links .footer__col:last-child .footer__items:last-child .footer__item{
+  width: 50%;
+}
+.footer__links .footer__col:last-child .footer__items:last-child .footer__item:nth-child(2){
+  background-image: url(../../static/img/gitlink-qq.png);
+  background-size: 100% 100%;
+  height: 90px;
+  width: 90px;
+  background-color: #fff;
+  border-radius: 4px;
+  position: relative;
+}
+.footer__links .footer__col:last-child .footer__items:last-child .footer__item:nth-child(3){
+  background-image: url(../../static/img/gongzhong.png);
+  background-size: 100% 100%;
+  height: 90px;
+  width: 90px;
+  background-color: #fff;
+  border-radius: 4px;
+  position: relative;
+  margin-left: 34px;
+}
+.footer__links .footer__col:last-child .footer__items:last-child .footer__item:nth-child(2) a,
+.footer__links .footer__col:last-child .footer__items:last-child .footer__item:nth-child(3) a{
+  position: absolute;
+  top: 95px;
+  left: 50%;
+  margin-left: -17px;
+}
+.footer__links .footer__col:last-child .footer__items:last-child .footer__item:first-child{
+  width: 100%;
+}
+.container .footer__links{
+  margin-left: 420px;
+}
+.container .footer__links .footer__col .footer__item{
+  color: #bdc2d1;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  height: 20px;
+  margin-bottom: 15px;
+}
+.footer__bottom .margin-bottom--sm img{
+  width: 300px;
+  max-width: unset;
+}
+.container .footer__copyright{
+  position: absolute;
+  width: 100%;
+  left: 0px;
+  font-size: 12px;
+  font-weight: 400;
+  color: #bdc2d1;
+  line-height: 28px;
+  padding: 15px 0;
+  text-align: center;
+  background-color: #1b212c;
+}
+.container .footer__copyright p{
+  margin-bottom: 0px!important;
+}
+.aa-Form{
+  width: unset;
+  flex:1;
+}
+.widget{
+  display: none!important;
+  opacity: 0;
 }
