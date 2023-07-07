@@ -142,7 +142,9 @@ module.exports = {
     ],
   ],
   plugins: [
-    ['@cmfcmf/docusaurus-search-local', {}],
+    ['@cmfcmf/docusaurus-search-local', {
+      language:['en','zh']
+    }],
   ],
   i18n: {
     defaultLocale: 'zh-cn',

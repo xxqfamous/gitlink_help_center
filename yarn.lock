@@ -1779,6 +1779,30 @@
   "resolved" "https://registry.npmjs.org/@mdx-js/util/-/util-1.6.22.tgz"
   "version" "1.6.22"
 
+"@node-rs/jieba-darwin-arm64@1.7.0":
+  "integrity" "sha512-9gBuxJCNITNI/gU5l8eeVGQ9MAf0BV86lfeo9TeU61vJCy6sqyx26wFMLODQgLNdiMP+q/fZme/G0hfZUjfPVA=="
+  "resolved" "https://registry.npmmirror.com/@node-rs/jieba-darwin-arm64/-/jieba-darwin-arm64-1.7.0.tgz"
+  "version" "1.7.0"
+
+"@node-rs/jieba@^1.7.0":
+  "integrity" "sha512-Hm1JIlejxkWe1FSFZRns/g1j5hZmp357n+0n2BluABA4KLZ8EraHfPmPRmVMW6vbdMZObTYIVu5aVrPnUfBOxg=="
+  "resolved" "https://registry.npmmirror.com/@node-rs/jieba/-/jieba-1.7.0.tgz"
+  "version" "1.7.0"
+  optionalDependencies:
+    "@node-rs/jieba-android-arm-eabi" "1.7.0"
+    "@node-rs/jieba-android-arm64" "1.7.0"
+    "@node-rs/jieba-darwin-arm64" "1.7.0"
+    "@node-rs/jieba-darwin-x64" "1.7.0"
+    "@node-rs/jieba-freebsd-x64" "1.7.0"
+    "@node-rs/jieba-linux-arm-gnueabihf" "1.7.0"
+    "@node-rs/jieba-linux-arm64-gnu" "1.7.0"
+    "@node-rs/jieba-linux-arm64-musl" "1.7.0"
+    "@node-rs/jieba-linux-x64-gnu" "1.7.0"
+    "@node-rs/jieba-linux-x64-musl" "1.7.0"
+    "@node-rs/jieba-win32-arm64-msvc" "1.7.0"
+    "@node-rs/jieba-win32-ia32-msvc" "1.7.0"
+    "@node-rs/jieba-win32-x64-msvc" "1.7.0"
+
 "@nodelib/fs.scandir@2.1.5":
   "integrity" "sha512-vq24Bq3ym5HEQm2NKCr3yXDwjc7vTsEThRDnkp2DK9p1uqLR+DHurm/NOTo0KG7HYHU7eppKZj3MyqYuMBf62g=="
   "resolved" "https://registry.npmjs.org/@nodelib/fs.scandir/-/fs.scandir-2.1.5.tgz"
