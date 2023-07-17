@@ -25,47 +25,47 @@ GitLink（确实开源）是CCF官方指定的开源创新服务平台，旨在�
 	<div class="col col--12">
 	<section class="row list">
   <article class="col col--6 margin-bottom--lg">
-    <a class="card padding--lg cardContainer" href="/docs/快速开始/注册GitLink账号">
+    <a class="card padding--lg cardContainer" href="/快速开始/注册GitLink账号">
       <h2 class="text--truncate cardTitle" title="快速开始">快速开始</h2>
 		<p>帮助用户快速注册使用平台[5个文档]</p>
 	</a></article>
   <article class="col col--6 margin-bottom--lg">
-   <a class="card padding--lg cardContainer" href="/docs/代码库管理/仓库创建">
+   <a class="card padding--lg cardContainer" href="/代码库管理/仓库创建">
      <h2 class="text--truncate cardTitle" title="代码库管理">代码库管理</h2>
 		<p>代码库使用及设置[8个文档]</p>
 	</a></article>
     <article class="col col--6 margin-bottom--lg">
-   <a class="card padding--lg cardContainer" href="/docs/组织管理/组织简介">
+   <a class="card padding--lg cardContainer" href="/组织管理/组织简介">
      <h2 class="text--truncate cardTitle" title="组织管理">组织管理</h2>
 		<p>组织使用及设置[5个文档]</p>
 	</a></article>
        <article class="col col--6 margin-bottom--lg">
-   <a class="card padding--lg cardContainer" href="/docs/疑修/疑修简介">
+   <a class="card padding--lg cardContainer" href="/疑修/疑修简介">
      <h2 class="text--truncate cardTitle" title="疑修">疑修</h2>
 		<p>疑修(Issue)使用及设置[7个文档]</p>
 	</a></article>
      <article class="col col--6 margin-bottom--lg">
-     <a class="card padding--lg cardContainer" href="/docs/合并请求/合并请求简介">
+     <a class="card padding--lg cardContainer" href="/合并请求/合并请求简介">
      <h2 class="text--truncate cardTitle" title="合并请求">合并请求</h2>
 		<p>合并请求(Pull Request)使用及设置[5个文档]</p>
 	</a></article>
      <article class="col col--6 margin-bottom--lg">
-         <a class="card padding--lg cardContainer" href="/docs/DevOps引擎/引擎简介">
+         <a class="card padding--lg cardContainer" href="/DevOps引擎/引擎简介">
      <h2 class="text--truncate cardTitle" title="DevOps引擎">DevOps引擎</h2>
 		<p>DevOps引擎(Engine)使用及设置[6个文档]</p>
 	</a></article>
      <article class="col col--6 margin-bottom--lg">
-             <a class="card padding--lg cardContainer" href="/docs/维基/模板导入及导出">
+             <a class="card padding--lg cardContainer" href="/维基/模板导入及导出">
      <h2 class="text--truncate cardTitle" title="维基">维基</h2>
 		<p>维基(Wiki)使用及设置[2个文档]</p>
 	</a></article>
      <article class="col col--6 margin-bottom--lg">
-     <a class="card padding--lg cardContainer" href="/docs/Bot市场/bot安装">
+     <a class="card padding--lg cardContainer" href="/Bot市场/bot安装">
      <h2 class="text--truncate cardTitle" title="Bot市场">Bot市场</h2>
 		<p>Bot市场使用及设置[4个文档]</p>
 	</a></article>
      <article class="col col--6 margin-bottom--lg">
-    <a class="card padding--lg cardContainer" href="/docs/第三方服务/跨平台代码同步">
+    <a class="card padding--lg cardContainer" href="/第三方服务/跨平台代码同步">
      <h2 class="text--truncate cardTitle" title="第三方服务">第三方服务</h2>
 		<p>第三方服务使用及设置[3个文档]</p>
 	</a></article>
