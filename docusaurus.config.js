@@ -152,6 +152,7 @@ module.exports = {
         hashed: true,
         language: ["en", "zh"],
         highlightSearchTermsOnTargetPage: true,
+        blogRouteBasePath: "/", 
         explicitSearchResultPath: true,
         // For Docs using Chinese, The `language` is recommended to set to:
         // ```
