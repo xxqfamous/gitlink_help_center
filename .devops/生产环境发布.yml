@@ -11,7 +11,7 @@ workflow:
     name: nodejs构建
     task: nodejs_build@1.7.0-node18
     input:
-      workspace: '""'
+      workspace: ((git_clone_0.git_path))
       build_action: '"build"'
       build_args: '""'
       install_args: '""'
