@@ -1,0 +1,53 @@
+version: 2
+name: 生产环境发布
+description: ""
+global:
+  concurrent: 1
+workflow:
+  - ref: start
+    name: 开始
+    task: start
+  - ref: nodejs_build_0
+    name: nodejs构建
+    task: nodejs_build@1.7.0-node12
+    input:
+      workspace: ((git_clone_0.git_path))
+      build_action: '"build"'
+      build_args: '""'
+      install_args: '""'
+      registry_url: '""'
+      disturl_url: '""'
+      sass_binary_site_url: '""'
+      package_management_type: '"yarn"'
+      vc_package_dir: '"."'
+      cache_path: '"/cache"'
+    needs:
+      - git_clone_0
+  - ref: git_clone_0
+    name: git clone
+    task: git_clone@1.2.9
+    input:
+      remote_url: '"https://www.gitlink.org.cn/gitlink/gitlink_help_center.git"'
+      ref: '"refs/heads/master"'
+      commit_id: '""'
+      depth: 1
+    needs:
+      - start
+  - ref: end
+    name: 结束
+    task: end
+    needs:
+      - scp_resource_0
+  - ref: scp_resource_0
+    name: scp替换文件
+    task: scp_resource@1.4.3
+    input:
+      ssh_ip: '""'
+      ssh_port: '"22"'
+      ssh_user: '"root"'
+      remote_file: '""'
+      local_file: '""'
+      file_content: '""'
+    needs:
+      - nodejs_build_0
+
