@@ -41,7 +41,8 @@ module.exports = {
         // width: '32px',
         // height: '32px',
         alt: 'gitlink',
-        src: 'img/gitlink.png'
+        src: 'img/gitlink.png',
+        href:"https://www.gitlink.org.cn/"
         // srcDark: 'img/logo-dark.png',
       },
       items: [
