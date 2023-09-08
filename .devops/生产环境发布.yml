@@ -9,9 +9,9 @@ workflow:
     task: start
   - ref: nodejs_build_0
     name: nodejs构建
-    task: nodejs_build@1.7.0-node12
+    task: nodejs_build@1.7.0-node18
     input:
-      workspace: ((git_clone_0.git_path))
+      workspace: '""'
       build_action: '"build"'
       build_args: '""'
       install_args: '""'
