@@ -16,6 +16,12 @@ module.exports = {
   scripts: [],
   // stylesheets: ['styles/dark-mode.css'],
   themeConfig: {
+    metadata:[
+      {name:"Keywords",content:"Gitlink,forgeplus,GitLink,gitLink,GitLink,gitlink,帮助中心"},
+      {name:"hostname",content:"gitlink.org.cn"},
+      {property:"og:site_name",content:"GitLink"},
+      {property:"og:image:alt",content:"GitLink（确实开源）是中国计算机学会CCF官方指定的开源创新服务平台 - Gitlink/forgeplus：GitLink（确实开源）是中国计算机学会CCF官方指定的开源创新服务平台 for gitlink Gitlink/forgeplus for git"}
+    ],
     prism: {
       theme: lightCodeTheme,
       darkTheme: darkCodeTheme,
