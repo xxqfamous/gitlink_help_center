@@ -6,7 +6,7 @@ import("@easyops-cn/docusaurus-search-local").PluginOptions;
 module.exports = {
   title: 'gitlink',
   tagline:'gitlink帮助中心',
-  url: 'https://boxyhq.com',
+  url: 'https://help.gitlink.org.cn/',
   baseUrl: '/',
   onBrokenLinks: 'ignore',
   onBrokenMarkdownLinks: 'ignore',
