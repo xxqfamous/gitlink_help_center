@@ -48,14 +48,16 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
   background-color: #33416b;
 }
 .footer{
-  height: 473px;
+  height:450px;
   position: relative;
   background: #1e1e1e;
+  padding:0px;
 }
 .container{
   height: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
 }
 .footer__bottom .margin-bottom--sm{
   position: absolute;
@@ -108,6 +110,10 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
 }
 .container .footer__links{
   margin-left: 420px;
+  margin-top: 4rem;
+}
+.container .footer__logo{
+  margin-top: 5rem!important;
 }
 .container .footer__links .footer__col .footer__item{
   color: #bdc2d1;
