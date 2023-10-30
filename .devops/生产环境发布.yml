@@ -52,7 +52,7 @@ workflow:
     needs:
       - nodejs_build_0
   - ref: ssh_cmd_0
-    name: ssh执行命令
+    name: 重启nginx
     task: ssh_cmd@1.1.1
     input:
       ssh_ip: '""'
