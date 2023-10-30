@@ -1,0 +1,85 @@
+version: 2
+name: 【生产环境】发布更新
+description: "非管理员请勿操作 "
+global:
+  concurrent: 1
+workflow:
+  - ref: start
+    name: 开始
+    task: start
+  - ref: nodejs_build_0
+    name: nodejs构建
+    task: nodejs_build@1.7.0-node18
+    input:
+      workspace: ((git_clone_0.git_path))
+      build_action: '"build"'
+      build_args: '""'
+      install_args: '""'
+      registry_url: '""'
+      disturl_url: '""'
+      sass_binary_site_url: '""'
+      package_management_type: '"yarn"'
+      vc_package_dir: '"."'
+      cache_path: '"/cache"'
+    needs:
+      - git_clone_0
+  - ref: git_clone_0
+    name: git clone
+    task: git_clone@1.2.9
+    input:
+      remote_url: '"https://www.gitlink.org.cn/gitlink/gitlink_help_center.git"'
+      ref: '"refs/heads/master"'
+      commit_id: '""'
+      depth: 1
+    needs:
+      - dingtalk_notice_text_0
+  - ref: end
+    name: 结束
+    task: end
+    needs:
+      - dingtalk_notice_text_1
+  - ref: scp_resource_0
+    name: scp替换打包文件到服务器
+    task: scp_resource@1.4.3
+    input:
+      ssh_pass: ((help_pro_server.password))
+      ssh_ip: '"106.75.45.236"'
+      ssh_port: '"22"'
+      ssh_user: '"root"'
+      remote_file: '"/root/gitlink_help_center"'
+      local_file: ((git_clone_0.git_path))+"/build"
+      file_content: '""'
+    needs:
+      - nodejs_build_0
+  - ref: ssh_cmd_0
+    name: 重启nginx
+    task: ssh_cmd@1.1.1
+    input:
+      ssh_pass: ((help_pro_server.password))
+      ssh_ip: '"106.75.45.236"'
+      ssh_port: '"22"'
+      ssh_user: '"root"'
+      ssh_cmd: '"service nginx restart"'
+    needs:
+      - scp_resource_0
+  - ref: dingtalk_notice_text_0
+    name: 钉钉通知-开始更新
+    task: dingtalk_notice_text@1.0.2
+    input:
+      boot_webhook_url: ((dingdingtalk.url))
+      msg_text: '"GitLink帮助中心-开始更新。。。"'
+      at_user_ids: '"[]"'
+      at_mobiles: '"[]"'
+    needs:
+      - start
+  - ref: dingtalk_notice_text_1
+    name: 钉钉通知-更新完成
+    task: dingtalk_notice_text@1.0.2
+    input:
+      boot_webhook_url: ((dingdingtalk.url))
+      msg_text: '"GitLink帮助中心-更新完成"'
+      at_user_ids: '"[]"'
+      at_mobiles: '"[]"'
+    needs:
+      - ssh_cmd_0
+
