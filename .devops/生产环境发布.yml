@@ -32,12 +32,12 @@ workflow:
       commit_id: '""'
       depth: 1
     needs:
-      - start
+      - dingtalk_notice_text_0
   - ref: end
     name: 结束
     task: end
     needs:
-      - ssh_cmd_0
+      - dingtalk_notice_text_1
   - ref: scp_resource_0
     name: scp替换打包文件到服务器
     task: scp_resource@1.4.3
@@ -62,4 +62,24 @@ workflow:
       ssh_cmd: '"service nginx restart"'
     needs:
       - scp_resource_0
+  - ref: dingtalk_notice_text_0
+    name: 钉钉通知-开始更新
+    task: dingtalk_notice_text@1.0.2
+    input:
+      boot_webhook_url: ((dingdingtalk.url))
+      msg_text: '"GitLink帮助中心-开始更新。。。"'
+      at_user_ids: '"[]"'
+      at_mobiles: '"[]"'
+    needs:
+      - start
+  - ref: dingtalk_notice_text_1
+    name: 钉钉通知-更新完成
+    task: dingtalk_notice_text@1.0.2
+    input:
+      boot_webhook_url: ((dingdingtalk.url))
+      msg_text: '"GitLink帮助中心-更新完成"'
+      at_user_ids: '"[]"'
+      at_mobiles: '"[]"'
+    needs:
+      - ssh_cmd_0
 
