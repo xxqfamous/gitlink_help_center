@@ -46,7 +46,7 @@ workflow:
       ssh_ip: '"106.75.45.236"'
       ssh_port: '"22"'
       ssh_user: '"root"'
-      remote_file: '"/root/gitlink_help_center/build"'
+      remote_file: '"/root/gitlink_help_center"'
       local_file: ((git_clone_0.git_path))+"/build"
       file_content: '""'
     needs:
