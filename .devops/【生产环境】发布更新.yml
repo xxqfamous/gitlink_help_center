@@ -67,7 +67,7 @@ workflow:
     task: dingtalk_notice_text@1.0.2
     input:
       boot_webhook_url: ((dingdingtalk.url))
-      msg_text: '"GitLink帮助中心-开始更新。。。"'
+      msg_text: '"GitLink帮助中心-生产环境开始更新。。。"'
       at_user_ids: '"[]"'
       at_mobiles: '"[]"'
     needs:
@@ -77,7 +77,7 @@ workflow:
     task: dingtalk_notice_text@1.0.2
     input:
       boot_webhook_url: ((dingdingtalk.url))
-      msg_text: '"GitLink帮助中心-更新完成"'
+      msg_text: '"GitLink帮助中心-生产环境更新完成"'
       at_user_ids: '"[]"'
       at_mobiles: '"[]"'
     needs:
