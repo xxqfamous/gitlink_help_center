@@ -37,9 +37,9 @@ workflow:
     name: 结束
     task: end
     needs:
-      - scp_resource_0
+      - ssh_cmd_0
   - ref: scp_resource_0
-    name: scp替换文件
+    name: scp替换打包文件到服务器
     task: scp_resource@1.4.3
     input:
       ssh_pass: ((help_pro_server.password))
@@ -51,4 +51,14 @@ workflow:
       file_content: '""'
     needs:
       - nodejs_build_0
+  - ref: ssh_cmd_0
+    name: ssh执行命令
+    task: ssh_cmd@1.1.1
+    input:
+      ssh_ip: '""'
+      ssh_port: '"22"'
+      ssh_user: '"root"'
+      ssh_cmd: '""'
+    needs:
+      - scp_resource_0
 
