@@ -55,10 +55,11 @@ workflow:
     name: 重启nginx
     task: ssh_cmd@1.1.1
     input:
-      ssh_ip: '""'
+      ssh_pass: ((help_pro_server.password))
+      ssh_ip: '"106.75.45.236"'
       ssh_port: '"22"'
       ssh_user: '"root"'
-      ssh_cmd: '""'
+      ssh_cmd: '"service nginx restart"'
     needs:
       - scp_resource_0
 
