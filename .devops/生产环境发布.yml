@@ -42,10 +42,11 @@ workflow:
     name: scp替换文件
     task: scp_resource@1.4.3
     input:
+      ssh_pass: ((help_pro_server.password))
       ssh_ip: '""'
       ssh_port: '"22"'
       ssh_user: '"root"'
-      remote_file: '""'
+      remote_file: ((git_clone_0.git_path))+"/build"
       local_file: '""'
       file_content: '""'
     needs:
