@@ -7,7 +7,7 @@ module.exports = {
   title: 'gitlink',
   tagline:'gitlink帮助中心',
   url: 'https://help.gitlink.org.cn/',
-  baseUrl: '/',
+  baseUrl: '/gitlink_help_center',
   onBrokenLinks: 'ignore',
   onBrokenMarkdownLinks: 'ignore',
   favicon: 'img/icon.ico',
