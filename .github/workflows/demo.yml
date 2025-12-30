@@ -1,0 +1,14 @@
+name: Deploy test
+
+on:
+  push:
+    branches:
+      - master
+      - dev
+jobs:
+  deploy:
+    name: Deploy to GitHub Pages
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: echo "hello.."
