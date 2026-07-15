@@ -12,6 +12,9 @@ jobs:
       - uses: actions/checkout@v4
       - name: Render markdown
         uses: fionn/render-markdown@master
+        id: mto
         with:
           token: ${{secrets.GITHUB_TOKEN}}
           markdown_file: README.md
+      - run: |
+          echo ${{ steps.mto.outputs.html }}
