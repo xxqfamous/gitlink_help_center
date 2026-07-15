@@ -11,7 +11,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Render markdown
-      - uses: markpatterson27/markdown-to-output@v1
+        uses: markpatterson27/markdown-to-output@v1
         id: mto
         with:
           filepath: project.md
