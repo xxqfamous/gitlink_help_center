@@ -15,6 +15,6 @@ jobs:
         id: mto
         with:
           token: ${{secrets.GITHUB_TOKEN}}
-          markdown_file: README.md
+          markdown_file: project.md
       - run: |
           echo ${{ steps.mto.outputs.html }}
